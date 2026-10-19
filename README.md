@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="screenshots/banner/banner.gif" alt="APK Qo‘riqchi AI" width="100%">
+<img src="screenshots/banner/banner.png" alt="APK Qo‘riqchi AI" width="100%">
 
 # APK Qo‘riqchi AI
 
@@ -42,7 +42,7 @@ Kalitsiz ham ilova ishlaydi: qurilmadagi tekshiruvlar bajariladi, lekin natija *
 |:-:|:-:|:-:|:-:|
 | <img src="screenshots/11_apk_findings.png" width="200"> | <img src="screenshots/12_installed_apps.png" width="200"> | <img src="screenshots/04_settings_api_keys.png" width="200"> | <img src="screenshots/15_home_dark.png" width="200"> |
 
-Barcha 16 ta rasm: [screenshots/README.md](screenshots/README.md)
+Barcha 16 ta rasm: [screenshots/README.md](screenshots/README.md) · Animatsion banner: [banner.gif](screenshots/banner/banner.gif)
 
 ## Yuklab olish va o‘rnatish
 
