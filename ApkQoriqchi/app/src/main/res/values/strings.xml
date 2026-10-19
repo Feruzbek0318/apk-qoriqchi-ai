@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APK Qo‘riqchi AI</string>
+    <string name="common_back">Orqaga</string>
+    <string name="common_retry">Qayta urinish</string>
+    <string name="common_cancel">Bekor qilish</string>
+    <string name="common_not_configured">Sozlanmagan</string>
+    <string name="nav_home">Bosh sahifa</string>
+    <string name="nav_apk">APK</string>
+    <string name="nav_url">Havola</string>
+    <string name="nav_apps">Ilovalar</string>
+    <string name="nav_history">Tarix</string>
+    <string name="nav_settings">Sozlamalar</string>
+    <string name="risk_no_detections">Tahdid aniqlanmadi</string>
+    <string name="risk_low">Past xavf</string>
+    <string name="risk_medium">O‘rtacha xavf</string>
+    <string name="risk_high">Yuqori xavf</string>
+    <string name="risk_critical">Juda xavfli</string>
+    <string name="risk_unknown">Noma’lum</string>
+    <string name="disclaimer_not_safe">Tahdid aniqlanmagani faylning to‘liq xavfsizligini kafolatlamaydi.</string>
+</resources>

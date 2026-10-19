@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_appearance">Ko‘rinish</string>
+    <string name="settings_theme">Mavzu</string>
+    <string name="theme_system">Tizim</string>
+    <string name="theme_light">Yorug‘</string>
+    <string name="theme_dark">Qorong‘i</string>
+    <string name="settings_ai_section">Sun’iy intellekt</string>
+    <string name="intro_tagline">Avval tekshiring, keyin o‘rnating</string>
+</resources>

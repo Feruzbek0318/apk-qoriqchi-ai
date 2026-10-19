@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Back</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_not_configured">Not configured</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_apk">APK</string>
+    <string name="nav_url">Link</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+    <string name="risk_no_detections">No threats detected</string>
+    <string name="risk_low">Low risk</string>
+    <string name="risk_medium">Medium risk</string>
+    <string name="risk_high">High risk</string>
+    <string name="risk_critical">Critical risk</string>
+    <string name="risk_unknown">Unknown</string>
+    <string name="disclaimer_not_safe">No detections does not guarantee that a file is completely safe.</string>
+</resources>

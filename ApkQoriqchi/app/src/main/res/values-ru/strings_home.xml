@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_hero_title">Сначала проверьте, потом устанавливайте</string>
+    <string name="home_hero_body">Проверяем выбранные вами APK, ссылки и приложения через надёжные источники.</string>
+    <string name="home_last_scan">Последняя проверка: %1$s</string>
+    <string name="home_no_scans_yet">Проверок ещё не было</string>
+    <string name="home_total_scans">В истории: %1$d</string>
+    <string name="home_apk_title">Проверка APK</string>
+    <string name="home_apk_body">Анализ файла перед установкой</string>
+    <string name="home_url_title">Проверка ссылки</string>
+    <string name="home_url_body">Выявление фишинга и вредоносных сайтов</string>
+    <string name="home_apps_title">Установленные приложения</string>
+    <string name="home_apps_body">Аудит разрешений и источников</string>
+    <string name="home_recent">Последние проверки</string>
+    <string name="home_see_all">Все</string>
+    <string name="home_recent_empty">Проверок пока нет. Выберите один из разделов выше.</string>
+    <string name="home_services">Статус сервисов</string>
+    <string name="home_service_ready">Настроено</string>
+    <string name="home_services_hint">Добавьте API-ключи в настройках. Без ключей работает только анализ на устройстве.</string>
+    <string name="home_tips">Важно знать</string>
+    <string name="home_tip_1">Приложение проверяет только выбранные вами файлы и ссылки; фоновой защиты в реальном времени нет.</string>
+    <string name="home_tip_2">Результат «Угроз не обнаружено» не гарантирует 100% безопасность.</string>
+    <string name="home_tip_3">По возможности устанавливайте приложения из официальных источников, например Google Play.</string>
+    <string name="home_tip_4">Будьте осторожны с APK из SMS, Telegram и неизвестных сайтов.</string>
+    <string name="onb_skip">Пропустить</string>
+    <string name="onb_next">Далее</string>
+    <string name="onb_start">Начать</string>
+    <string name="onb_1_title">Что делает APK Qo‘riqchi AI?</string>
+    <string name="onb_1_p1">Проверяет APK-файлы до установки через VirusTotal и анализ на устройстве.</string>
+    <string name="onb_1_p2">Проверяет ссылки по базам фишинговых и вредоносных сайтов.</string>
+    <string name="onb_1_p3">Анализирует разрешения и источник установленных приложений, а ИИ объясняет результат простым языком.</string>
+    <string name="onb_2_title">Честные ограничения</string>
+    <string name="onb_2_p1">Приложение не заменяет Google Play Protect и защиту Android – оставьте их включёнными.</string>
+    <string name="onb_2_p2">Проверяются только выбранные вами файлы и ссылки; фоновой защиты в реальном времени нет.</string>
+    <string name="onb_2_p3">«Угроз не обнаружено» не означает 100% безопасность.</string>
+    <string name="onb_3_title">Ваша конфиденциальность</string>
+    <string name="onb_3_p1">Сервисам отправляются только хеши файлов и ссылки.</string>
+    <string name="onb_3_p2">Сами файлы загружаются в VirusTotal только с вашего явного согласия.</string>
+    <string name="onb_3_p3">API-ключи хранятся на устройстве в зашифрованном виде; своего сервера у нас нет.</string>
+    <string name="onb_3_p4">Историю и ключи можно удалить в настройках в любой момент.</string>
+</resources>

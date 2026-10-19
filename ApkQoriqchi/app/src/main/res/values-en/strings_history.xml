@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_title">Scan history</string>
+    <string name="history_detail_title">Scan result</string>
+    <string name="history_filter_all">All</string>
+    <string name="history_type_apk">APK file</string>
+    <string name="history_type_url">Link</string>
+    <string name="history_type_app">Installed app</string>
+    <string name="history_today">Today</string>
+    <string name="history_yesterday">Yesterday</string>
+    <string name="history_empty">No scans yet. Check an APK file, a link or an app and the results will be saved here.</string>
+    <string name="history_empty_filtered">No scans of this type.</string>
+    <string name="history_long_press_hint">Long-press an entry to delete it.</string>
+    <string name="history_clear_all">Clear history</string>
+    <string name="history_clear_title">Clear history</string>
+    <string name="history_clear_text">All scan history will be deleted. This cannot be undone.</string>
+    <string name="history_clear_confirm">Delete</string>
+    <string name="history_delete">Delete</string>
+    <string name="history_delete_title">Delete this entry?</string>
+    <string name="history_not_found">Entry not found or deleted.</string>
+    <string name="history_field_type">Type</string>
+    <string name="history_field_target">Target</string>
+    <string name="history_field_date">Date</string>
+    <string name="history_technical">Technical details</string>
+    <string name="history_copy">Copy</string>
+    <string name="history_copied">Copied</string>
+    <string name="history_provider_status">Provider status</string>
+    <string name="history_incomplete">Incomplete scan</string>
+    <string name="history_incomplete_body">Some providers did not respond, so this result is based on partial data.</string>
+</resources>

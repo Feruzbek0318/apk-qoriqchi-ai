@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APK Qo‘riqchi AI — Banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg0: #000b24; --bg1: #04153d; --blue: #2f7bff; --cyan: #4fc3ff;
+    --text: #eaf1ff; --muted: #9db0d6; --line: rgba(120, 160, 255, .18);
+    --danger: #ff4d5e; --warn: #ffb020; --ok: #2fd27a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #01061a; color: var(--text);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    display: grid; place-items: center; overflow: hidden;
+  }
+  /* 1280×640 stage (GitHub social preview size), scaled to fit the window */
+  .stage {
+    width: 1280px; height: 640px; position: relative; overflow: hidden; flex: none;
+    background:
+      radial-gradient(600px 420px at 78% 50%, rgba(47,123,255,.35), transparent 70%),
+      radial-gradient(500px 300px at 10% 0%, rgba(79,195,255,.16), transparent 70%),
+      linear-gradient(135deg, var(--bg1), var(--bg0) 60%);
+    transform-origin: center; border-radius: 0;
+  }
+  .grid {
+    position: absolute; inset: 0; opacity: .5;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(800px 500px at 70% 50%, #000 30%, transparent 75%);
+  }
+  .scan {
+    position: absolute; left: 0; right: 0; height: 120px; top: -120px; pointer-events: none;
+    background: linear-gradient(180deg, transparent, rgba(79,195,255,.10) 70%, rgba(79,195,255,.45) 98%, transparent);
+    animation: scan 5s linear infinite;
+  }
+  @keyframes scan { to { top: 640px; } }
+
+  /* Left column */
+  .left { position: absolute; left: 64px; top: 58px; width: 560px; z-index: 3; }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .brand img { width: 84px; height: 93px; filter: drop-shadow(0 0 22px rgba(47,123,255,.8)); animation: float 4s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-6px); } }
+  h1 { font-size: 50px; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+  h1 span { background: linear-gradient(90deg, var(--cyan), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .ai-tag { display: inline-block; margin-top: 8px; font: 500 13px 'JetBrains Mono', monospace; color: var(--cyan); letter-spacing: .3em; }
+  .tagline { margin-top: 26px; font-size: 25px; font-weight: 600; }
+  .sub { margin-top: 8px; font-size: 16px; color: var(--muted); line-height: 1.5; max-width: 520px; }
+
+  .tabs { margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tab {
+    display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 14px; cursor: pointer;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line); color: var(--text);
+    font: 600 15px Inter, sans-serif; text-align: left; transition: .25s; position: relative; overflow: hidden;
+  }
+  .tab .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; background: rgba(47,123,255,.18); font-size: 16px; flex: none; }
+  .tab small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .tab:hover { border-color: rgba(79,195,255,.6); transform: translateX(3px); }
+  .tab.active { background: rgba(47,123,255,.2); border-color: var(--blue); box-shadow: 0 0 24px rgba(47,123,255,.35); }
+  .tab .bar { position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--cyan); }
+  .tab.active .bar { animation: fill var(--dur, 3.2s) linear forwards; }
+  .paused .tab.active .bar { animation: none; width: 100%; }
+  @keyframes fill { to { width: 100%; } }
+
+  .chips { position: absolute; left: 64px; bottom: 40px; display: flex; gap: 8px; z-index: 3; flex-wrap: wrap; width: 600px; }
+  .chip { font: 500 12px 'JetBrains Mono', monospace; color: var(--muted); padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; background: rgba(0,0,0,.25); }
+  .chip b { color: var(--text); font-weight: 500; }
+
+  /* Phones */
+  .phones { position: absolute; right: 30px; top: 0; width: 600px; height: 640px; perspective: 1400px; z-index: 2; }
+  .rig { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .25s ease-out; }
+  .phone {
+    position: absolute; top: 50%; left: 50%; width: 236px; height: 524px; border-radius: 34px; padding: 9px;
+    background: linear-gradient(145deg, #1d2a4d, #070d22); border: 1px solid rgba(140,170,255,.35);
+    box-shadow: 0 30px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.6) inset;
+    transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .7s, filter .7s; cursor: pointer;
+  }
+  .phone .screen { width: 100%; height: 100%; border-radius: 26px; overflow: hidden; position: relative; background: #f2f5fb; }
+  .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .phone .notch { position: absolute; top: 15px; left: 50%; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: #000; z-index: 2; }
+  .phone.p0 { transform: translate(-50%,-50%) translateZ(80px); z-index: 3; box-shadow: 0 40px 80px rgba(0,0,0,.6), 0 0 60px rgba(47,123,255,.45); }
+  .phone.p-1 { transform: translate(-112%,-47%) rotateY(28deg) scale(.82); filter: brightness(.55); z-index: 1; }
+  .phone.p1 { transform: translate(12%,-47%) rotateY(-28deg) scale(.82); filter: brightness(.55); z-index: 1; }
+  .phone.hidden { transform: translate(-50%,-50%) translateZ(-300px) scale(.6); opacity: 0; pointer-events: none; }
+
+  .badge {
+    position: absolute; z-index: 4; padding: 10px 14px; border-radius: 14px; font-size: 13px; font-weight: 600;
+    background: rgba(6,16,44,.85); border: 1px solid var(--line); backdrop-filter: blur(6px);
+    display: flex; align-items: center; gap: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    transition: opacity .5s, transform .5s;
+  }
+  .badge .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .badge.b1 { right: 470px; top: 120px; }
+  .badge.b2 { right: 40px; bottom: 90px; }
+  .badge.swap { opacity: 0; transform: translateY(6px); }
+
+  .hint { position: absolute; right: 24px; top: 18px; font: 500 11px 'JetBrains Mono', monospace; color: rgba(157,176,214,.6); z-index: 4; }
+  .static .hint, .static .scan { display: none; }
+  .static * { animation-play-state: paused !important; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <div class="grid"></div>
+  <div class="scan"></div>
+  <div class="hint">← → yoki bosing · sichqonchani yurgizing</div>
+
+  <div class="left">
+    <div class="brand">
+      <img src="logo_shield.png" alt="">
+      <div>
+        <h1>APK <span>Qo‘riqchi</span></h1>
+        <div class="ai-tag">— A I —</div>
+      </div>
+    </div>
+    <div class="tagline">Avval tekshiring, keyin o‘rnating.</div>
+    <div class="sub">APK fayllar, havolalar va o‘rnatilgan ilovalarni VirusTotal, Google Safe Browsing va qurilmadagi tahlil orqali tekshiradi — natijani Gemini AI oddiy tilda tushuntiradi.</div>
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <div class="phones" id="phones"><div class="rig" id="rig"></div></div>
+  <div class="badge b1" id="b1"></div>
+  <div class="badge b2" id="b2"></div>
+
+  <div class="chips">
+    <span class="chip"><b>Kotlin</b> · Jetpack Compose</span>
+    <span class="chip"><b>Material 3</b></span>
+    <span class="chip">VirusTotal · Safe Browsing · <b>Gemini</b></span>
+    <span class="chip">🔐 O‘z API kalitingiz</span>
+    <span class="chip">UZ · RU · EN</span>
+  </div>
+</div>
+
+<script>
+const slides = [
+  { icon: '📦', title: 'APK tekshirish', sub: 'Imzo, ruxsatlar, VirusTotal', img: '../10_apk_report.png',
+    b1: ['var(--warn)', 'O‘rtacha xavf · 52 ruxsat'], b2: ['var(--cyan)', 'apksig v1–v4 imzo tekshiruvi'] },
+  { icon: '🔗', title: 'Havola tekshirish', sub: 'Fishing va zararli saytlar', img: '../06_url_phishing.png',
+    b1: ['var(--danger)', 'Juda xavfli · 10/93 antivirus'], b2: ['var(--danger)', 'Safe Browsing: SOCIAL_ENGINEERING'] },
+  { icon: '✨', title: 'AI izohi', sub: 'Gemini oddiy tilda tushuntiradi', img: '../08_ai_explanation.png',
+    b1: ['var(--cyan)', 'Gemini 2.5 Flash · o‘zbek tilida'], b2: ['var(--ok)', 'Hukmni faqat dalillar belgilaydi'] },
+  { icon: '📱', title: 'O‘rnatilgan ilovalar', sub: 'Ruxsat va manba auditi', img: '../12_installed_apps.png',
+    b1: ['var(--ok)', '259 ta ilova tekshirildi'], b2: ['var(--warn)', 'Maxsus ruxsatlar aniqlanadi'] },
+  { icon: '🔑', title: 'O‘z API kalitingiz', sub: 'Shifrlangan, faqat qurilmada', img: '../05_settings_keys_saved.png',
+    b1: ['var(--ok)', 'Kalit ishlayapti · HTTP 200'], b2: ['var(--cyan)', 'Android Keystore · AES-256'] },
+  { icon: '🌙', title: 'Qorong‘i mavzu', sub: 'Yorug‘ · Qorong‘i · Tizim', img: '../15_home_dark.png',
+    b1: ['var(--cyan)', 'Material 3 dizayn'], b2: ['var(--ok)', 'UZ · RU · EN tillari'] },
+];
+
+const params = new URLSearchParams(location.search);
+const isStatic = params.has('static');
+let current = Math.min(+params.get('slide') || 0, slides.length - 1);
+let timer = null;
+const DUR = 3200;
+
+const stage = document.getElementById('stage');
+const tabs = document.getElementById('tabs');
+const rig = document.getElementById('rig');
+if (isStatic) stage.classList.add('static', 'paused');
+stage.style.setProperty('--dur', DUR + 'ms');
+
+slides.forEach((s, i) => {
+  const t = document.createElement('button');
+  t.className = 'tab';
+  t.innerHTML = `<span class="ic">${s.icon}</span><span>${s.title}<small>${s.sub}</small></span><span class="bar"></span>`;
+  t.onclick = () => { go(i); restart(); };
+  t.onmouseenter = () => { if (!isStatic) { go(i); stage.classList.add('paused'); clearInterval(timer); } };
+  t.onmouseleave = () => { stage.classList.remove('paused'); restart(); };
+  tabs.appendChild(t);
+
+  const p = document.createElement('div');
+  p.className = 'phone hidden';
+  p.innerHTML = `<div class="screen"><span class="notch"></span><img src="${s.img}" alt="${s.title}"></div>`;
+  p.onclick = () => { go(i); restart(); };
+  rig.appendChild(p);
+});
+
+function badge(el, [color, text]) {
+  el.classList.add('swap');
+  setTimeout(() => {
+    el.innerHTML = `<span class="dot" style="background:${color};box-shadow:0 0 10px ${color}"></span>${text}`;
+    el.classList.remove('swap');
+  }, isStatic ? 0 : 250);
+}
+
+function go(i) {
+  current = (i + slides.length) % slides.length;
+  [...tabs.children].forEach((t, k) => {
+    t.classList.toggle('active', k === current);
+    if (k === current) { const b = t.querySelector('.bar'); b.style.animation = 'none'; b.offsetWidth; b.style.animation = ''; }
+  });
+  [...rig.children].forEach((p, k) => {
+    let d = k - current;
+    if (d > slides.length / 2) d -= slides.length;
+    if (d < -slides.length / 2) d += slides.length;
+    p.className = 'phone ' + (Math.abs(d) <= 1 ? 'p' + d : 'hidden');
+  });
+  badge(document.getElementById('b1'), slides[current].b1);
+  badge(document.getElementById('b2'), slides[current].b2);
+}
+
+function restart() {
+  clearInterval(timer);
+  if (!isStatic) timer = setInterval(() => go(current + 1), DUR);
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') { go(current + 1); restart(); }
+  if (e.key === 'ArrowLeft') { go(current - 1); restart(); }
+});
+
+// Parallax tilt that follows the pointer
+if (!isStatic) stage.addEventListener('mousemove', e => {
+  const r = stage.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+  rig.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 10}deg)`;
+});
+stage.addEventListener('mouseleave', () => rig.style.transform = '');
+
+function fit() {
+  const s = Math.min(innerWidth / 1280, innerHeight / 640);
+  stage.style.transform = `scale(${s})`;
+}
+addEventListener('resize', fit); fit();
+
+go(current); restart();
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+
+# Secrets: never commit API keys
+dizayn/api keys
+**/local.properties
+**/.env
+dizayn/promp text
+**/.env.*
+!**/.env.example
+*.jks
+*.keystore
+key.properties
+
+# Local tooling
+.claude/
+
+# Built APKs are published on the Releases page, not committed
+APK/
+*.apk
+*.aab
+
+# Unused Flutter starter template at the root (the app is in ApkQoriqchi/)
+/lib/
+/android/
+/test/
+/pubspec.yaml
+/pubspec.lock
+/analysis_options.yaml
+/.metadata
+
+# Backend local files
+backend/.venv/
+backend/.pytest_cache/
+**/__pycache__/
+*.db

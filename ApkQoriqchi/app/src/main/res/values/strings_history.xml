@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_title">Tekshiruvlar tarixi</string>
+    <string name="history_detail_title">Tekshiruv natijasi</string>
+    <string name="history_filter_all">Barchasi</string>
+    <string name="history_type_apk">APK fayl</string>
+    <string name="history_type_url">Havola</string>
+    <string name="history_type_app">O‘rnatilgan ilova</string>
+    <string name="history_today">Bugun</string>
+    <string name="history_yesterday">Kecha</string>
+    <string name="history_empty">Hali tekshiruvlar yo‘q. APK fayl, havola yoki ilovani tekshiring – natijalar shu yerda saqlanadi.</string>
+    <string name="history_empty_filtered">Bu turdagi tekshiruvlar yo‘q.</string>
+    <string name="history_long_press_hint">O‘chirish uchun yozuvni bosib turing.</string>
+    <string name="history_clear_all">Tarixni tozalash</string>
+    <string name="history_clear_title">Tarixni tozalash</string>
+    <string name="history_clear_text">Barcha tekshiruvlar tarixi o‘chiriladi. Bu amalni qaytarib bo‘lmaydi.</string>
+    <string name="history_clear_confirm">O‘chirish</string>
+    <string name="history_delete">O‘chirish</string>
+    <string name="history_delete_title">Yozuvni o‘chirish?</string>
+    <string name="history_not_found">Yozuv topilmadi yoki o‘chirilgan.</string>
+    <string name="history_field_type">Turi</string>
+    <string name="history_field_target">Obyekt</string>
+    <string name="history_field_date">Sana</string>
+    <string name="history_technical">Texnik tafsilotlar</string>
+    <string name="history_copy">Nusxalash</string>
+    <string name="history_copied">Nusxa olindi</string>
+    <string name="history_provider_status">Xizmatlar holati</string>
+    <string name="history_incomplete">Tekshiruv to‘liq emas</string>
+    <string name="history_incomplete_body">Ba’zi xizmatlar javob bermadi, shuning uchun natija cheklangan ma’lumotga asoslangan.</string>
+</resources>

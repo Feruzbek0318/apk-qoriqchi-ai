@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_hero_title">Check first, install later</string>
+    <string name="home_hero_body">We check the APKs, links and apps you choose against trusted sources.</string>
+    <string name="home_last_scan">Last scan: %1$s</string>
+    <string name="home_no_scans_yet">No scans yet</string>
+    <string name="home_total_scans">In history: %1$d</string>
+    <string name="home_apk_title">Scan APK</string>
+    <string name="home_apk_body">Analyse a file before installing</string>
+    <string name="home_url_title">Check link</string>
+    <string name="home_url_body">Spot phishing and malicious sites</string>
+    <string name="home_apps_title">Installed apps</string>
+    <string name="home_apps_body">Audit permissions and sources</string>
+    <string name="home_recent">Recent scans</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_recent_empty">No scans yet. Pick one of the options above.</string>
+    <string name="home_services">Services</string>
+    <string name="home_service_ready">Configured</string>
+    <string name="home_services_hint">Add API keys in Settings. Without keys only on-device analysis works.</string>
+    <string name="home_tips">Good to know</string>
+    <string name="home_tip_1">The app only scans files and links you choose; there is no background real-time protection.</string>
+    <string name="home_tip_2">“No threats detected” is not a 100% safety guarantee.</string>
+    <string name="home_tip_3">Install apps from official sources such as Google Play whenever possible.</string>
+    <string name="home_tip_4">Be careful with APKs from SMS, Telegram or unknown websites.</string>
+    <string name="onb_skip">Skip</string>
+    <string name="onb_next">Next</string>
+    <string name="onb_start">Get started</string>
+    <string name="onb_1_title">What does APK Qo‘riqchi AI do?</string>
+    <string name="onb_1_p1">Checks APK files before you install them using VirusTotal and on-device analysis.</string>
+    <string name="onb_1_p2">Checks links against phishing and malware site databases.</string>
+    <string name="onb_1_p3">Reviews installed apps’ permissions and install source, and AI explains the result in plain language.</string>
+    <string name="onb_2_title">Honest limits</string>
+    <string name="onb_2_p1">This app does not replace Google Play Protect or Android’s built-in security – keep them on.</string>
+    <string name="onb_2_p2">Only files and links you choose are checked; there is no background real-time protection.</string>
+    <string name="onb_2_p3">“No threats detected” is not a 100% safety guarantee.</string>
+    <string name="onb_3_title">Your privacy</string>
+    <string name="onb_3_p1">Only file hashes and URLs are sent to providers.</string>
+    <string name="onb_3_p2">Files themselves are uploaded to VirusTotal only with your explicit consent.</string>
+    <string name="onb_3_p3">API keys are stored encrypted on the device; we have no server.</string>
+    <string name="onb_3_p4">You can delete history and keys in Settings at any time.</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_title">AI izohi</string>
+    <string name="ai_generated_badge">AI yaratgan</string>
+    <string name="ai_no_key_hint">AI izohlari uchun Sozlamalarda Gemini API kalitini qo‘shing.</string>
+    <string name="ai_idle_body">Gemini AI yuqoridagi natijalarni oddiy tilda tushuntiradi va tavsiyalar beradi. Faqat aniqlangan dalillar yuboriladi, fayllar emas.</string>
+    <string name="ai_explain_button">AI bilan tushuntirish</string>
+    <string name="ai_loading">AI tahlil qilmoqda…</string>
+    <string name="ai_disclaimer">Bu matnni AI yaratgan va faqat yuqoridagi dalillarga asoslangan. U xato qilishi mumkin; yakuniy qarorni o‘zingiz qabul qiling.</string>
+    <string name="ai_error_auth">Gemini API kaliti noto‘g‘ri yoki faol emas. Sozlamalarda tekshiring.</string>
+    <string name="ai_error_rate_limit">So‘rovlar limiti tugadi. Birozdan so‘ng qayta urinib ko‘ring.</string>
+    <string name="ai_error_refusal">AI bu so‘rovga javob bermadi. Yuqoridagi natijalarga tayaning.</string>
+    <string name="ai_error_generic">AI izohini olib bo‘lmadi: %1$s</string>
+    <string name="ai_error_invalid">AI javobi kutilgan formatda emas, shuning uchun ko‘rsatilmadi.</string>
+    <string name="ai_error_network">Internet aloqasi yo‘q yoki server javob bermadi.</string>
+    <string name="ai_error_overloaded">Gemini hozir band. Birozdan so‘ng urinib ko‘ring.</string>
+    <string name="ai_confidence">AI ishonchi: %1$s</string>
+    <string name="ai_confidence_low">past</string>
+    <string name="ai_confidence_medium">o‘rtacha</string>
+    <string name="ai_confidence_high">yuqori</string>
+    <string name="ai_note_disagree">AI eslatmasi: AI baholashi – “%1$s”. Ilova hukmi o‘zgarmaydi – u aniq tekshiruv natijalariga asoslangan.</string>
+    <string name="ai_note_estimate">AI eslatmasi: AI o‘z baholashida “%1$s” deb hisobladi. Asosiy hukm – ilovaning tekshiruv natijasi.</string>
+    <string name="ai_sec_confirmed">Tasdiqlangan aniqlashlar</string>
+    <string name="ai_sec_suspicious">Shubhali belgilar (evristik)</string>
+    <string name="ai_sec_benign">Tinchlantiruvchi yoki izohlovchi omillar</string>
+    <string name="ai_sec_disagreements">Antiviruslar o‘rtasidagi farqlar</string>
+    <string name="ai_sec_evidence">Dalillar</string>
+    <string name="ai_sec_actions">Tavsiya etilgan amallar</string>
+    <string name="ai_sec_limitations">Cheklovlar</string>
+</resources>

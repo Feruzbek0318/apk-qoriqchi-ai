@@ -1,0 +1,23 @@
+[project]
+name = "apk-qoriqchi-backend"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.143",
+  "uvicorn[standard]>=0.54",
+  "pydantic>=2.14",
+  "pydantic-settings>=2.15",
+  "httpx>=0.28",
+  "sqlalchemy>=2.0.55",
+  "alembic>=1.20",
+  "psycopg[binary]>=3.3",
+  "anthropic>=1.15",
+  "python-multipart>=0.0.32",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.1", "pytest-asyncio>=1.4"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Назад</string>
+    <string name="common_retry">Повторить</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="common_not_configured">Не настроено</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_apk">APK</string>
+    <string name="nav_url">Ссылка</string>
+    <string name="nav_apps">Приложения</string>
+    <string name="nav_history">История</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="risk_no_detections">Угроз не обнаружено</string>
+    <string name="risk_low">Низкий риск</string>
+    <string name="risk_medium">Средний риск</string>
+    <string name="risk_high">Высокий риск</string>
+    <string name="risk_critical">Критический риск</string>
+    <string name="risk_unknown">Неизвестно</string>
+    <string name="disclaimer_not_safe">Отсутствие обнаруженных угроз не гарантирует полную безопасность файла.</string>
+</resources>

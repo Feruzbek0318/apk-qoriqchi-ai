@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sampled from the logo's background (dizayn/logo.png). -->
+    <color name="ic_launcher_background">#000B24</color>
+    <color name="brand_navy">#000B24</color>
+    <color name="window_light">#F5F7FB</color>
+    <color name="window_dark">#0B1220</color>
+</resources>

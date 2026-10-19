@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_appearance">Оформление</string>
+    <string name="settings_theme">Тема</string>
+    <string name="theme_system">Система</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="settings_ai_section">Искусственный интеллект</string>
+    <string name="intro_tagline">Сначала проверьте, потом устанавливайте</string>
+</resources>

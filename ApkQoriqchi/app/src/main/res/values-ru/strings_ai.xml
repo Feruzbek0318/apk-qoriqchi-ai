@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_title">Пояснение ИИ</string>
+    <string name="ai_generated_badge">Создано ИИ</string>
+    <string name="ai_no_key_hint">Добавьте ключ Gemini API в настройках, чтобы получать пояснения ИИ.</string>
+    <string name="ai_idle_body">Gemini простым языком объяснит результаты выше и даст рекомендации. Отправляются только найденные факты, а не файлы.</string>
+    <string name="ai_explain_button">Объяснить с помощью ИИ</string>
+    <string name="ai_loading">ИИ анализирует…</string>
+    <string name="ai_disclaimer">Этот текст создан ИИ и основан только на фактах выше. ИИ может ошибаться; окончательное решение принимаете вы.</string>
+    <string name="ai_error_auth">Ключ Gemini API неверен или неактивен. Проверьте его в настройках.</string>
+    <string name="ai_error_rate_limit">Превышен лимит запросов. Попробуйте позже.</string>
+    <string name="ai_error_refusal">ИИ не ответил на этот запрос. Опирайтесь на результаты выше.</string>
+    <string name="ai_error_generic">Не удалось получить пояснение ИИ: %1$s</string>
+    <string name="ai_error_invalid">Ответ ИИ не соответствует ожидаемому формату, поэтому не показан.</string>
+    <string name="ai_error_network">Нет подключения к интернету или сервер не ответил.</string>
+    <string name="ai_error_overloaded">Gemini сейчас перегружен. Попробуйте позже.</string>
+    <string name="ai_confidence">Уверенность ИИ: %1$s</string>
+    <string name="ai_confidence_low">низкая</string>
+    <string name="ai_confidence_medium">средняя</string>
+    <string name="ai_confidence_high">высокая</string>
+    <string name="ai_note_disagree">Заметка ИИ: ИИ оценивает риск как «%1$s». Вердикт приложения не меняется – он основан на результатах проверки.</string>
+    <string name="ai_note_estimate">Заметка ИИ: собственная оценка ИИ – «%1$s». Основной вердикт – результат проверки приложения.</string>
+    <string name="ai_sec_confirmed">Подтверждённые обнаружения</string>
+    <string name="ai_sec_suspicious">Подозрительные признаки (эвристика)</string>
+    <string name="ai_sec_benign">Успокаивающие или объясняющие факторы</string>
+    <string name="ai_sec_disagreements">Расхождения антивирусов</string>
+    <string name="ai_sec_evidence">Факты</string>
+    <string name="ai_sec_actions">Рекомендуемые действия</string>
+    <string name="ai_sec_limitations">Ограничения</string>
+</resources>

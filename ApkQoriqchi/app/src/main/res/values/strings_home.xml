@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_hero_title">Avval tekshiring, keyin o‘rnating</string>
+    <string name="home_hero_body">Siz tanlagan APK, havola va ilovalarni ishonchli manbalar orqali tekshiramiz.</string>
+    <string name="home_last_scan">Oxirgi tekshiruv: %1$s</string>
+    <string name="home_no_scans_yet">Hali tekshiruv o‘tkazilmagan</string>
+    <string name="home_total_scans">Tarixda: %1$d ta tekshiruv</string>
+    <string name="home_apk_title">APK tekshirish</string>
+    <string name="home_apk_body">Faylni o‘rnatishdan oldin tahlil qilish</string>
+    <string name="home_url_title">Havola tekshirish</string>
+    <string name="home_url_body">Fishing va zararli saytlarni aniqlash</string>
+    <string name="home_apps_title">O‘rnatilgan ilovalar</string>
+    <string name="home_apps_body">Ruxsatlar va manbalarni audit qilish</string>
+    <string name="home_recent">So‘nggi tekshiruvlar</string>
+    <string name="home_see_all">Barchasini ko‘rish</string>
+    <string name="home_recent_empty">Hali tekshiruvlar yo‘q. Yuqoridagi bo‘limlardan birini tanlang.</string>
+    <string name="home_services">Xizmatlar holati</string>
+    <string name="home_service_ready">Sozlangan</string>
+    <string name="home_services_hint">API kalitlarini Sozlamalarda qo‘shing. Kalitsiz faqat qurilmadagi tahlil ishlaydi.</string>
+    <string name="home_tips">Bilib qo‘ying</string>
+    <string name="home_tip_1">Ilova faqat siz tanlagan fayl va havolalarni tekshiradi; fonda real vaqt himoyasi yo‘q.</string>
+    <string name="home_tip_2">“Tahdid aniqlanmadi” natijasi 100% xavfsizlik kafolati emas.</string>
+    <string name="home_tip_3">Ilovalarni imkon qadar Google Play kabi rasmiy manbalardan o‘rnating.</string>
+    <string name="home_tip_4">SMS, Telegram yoki noma’lum saytlardan kelgan APK fayllarga ehtiyot bo‘ling.</string>
+    <string name="onb_skip">O‘tkazib yuborish</string>
+    <string name="onb_next">Keyingi</string>
+    <string name="onb_start">Boshlash</string>
+    <string name="onb_1_title">APK Qo‘riqchi AI nima qiladi?</string>
+    <string name="onb_1_p1">APK fayllarni o‘rnatishdan oldin VirusTotal va qurilmadagi tahlil orqali tekshiradi.</string>
+    <string name="onb_1_p2">Havolalarni fishing va zararli saytlar bazalari bo‘yicha tekshiradi.</string>
+    <string name="onb_1_p3">O‘rnatilgan ilovalarning ruxsatlari va manbasini ko‘rib chiqadi, natijani AI oddiy tilda tushuntiradi.</string>
+    <string name="onb_2_title">Halol cheklovlar</string>
+    <string name="onb_2_p1">Bu ilova Google Play Protect yoki Android xavfsizlik tizimining o‘rnini bosmaydi – ularni yoqiq qoldiring.</string>
+    <string name="onb_2_p2">Faqat siz tanlagan fayl va havolalar tekshiriladi; fonda real vaqt himoyasi yo‘q.</string>
+    <string name="onb_2_p3">“Tahdid aniqlanmadi” 100% xavfsizlik kafolati emas.</string>
+    <string name="onb_3_title">Maxfiyligingiz</string>
+    <string name="onb_3_p1">Xizmatlarga faqat fayl xeshlari va havolalar yuboriladi.</string>
+    <string name="onb_3_p2">Fayllarning o‘zi faqat aniq roziligingiz bilan VirusTotal’ga yuklanadi.</string>
+    <string name="onb_3_p3">API kalitlari qurilmada shifrlangan holda saqlanadi; bizning serverimiz yo‘q.</string>
+    <string name="onb_3_p4">Tarixni va kalitlarni istalgan vaqtda Sozlamalarda o‘chirishingiz mumkin.</string>
+</resources>

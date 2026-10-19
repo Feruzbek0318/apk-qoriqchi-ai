@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: qoriqchi
+      POSTGRES_DB: qoriqchi
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U qoriqchi"]
+      interval: 5s
+      retries: 10
+  api:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://qoriqchi:${POSTGRES_PASSWORD}@db:5432/qoriqchi
+    depends_on:
+      db: {condition: service_healthy}
+    ports: ["127.0.0.1:8000:8000"]   # put a TLS-terminating reverse proxy in front for production
+    read_only: true
+    tmpfs: [/tmp]
+volumes:
+  pgdata:
